@@ -1,6 +1,6 @@
 //import discord js, import config.json, import commandHandler.js,create client
 const {Client, Intents} = require('discord.js');
-const {token, owner, prefix} = require('./config.json');
+const {token, owner, prefix} = require('./json/config.json');
 const commandHandler = require('./commandHandler.js');
 const client = new Client({
     intents : [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS]
