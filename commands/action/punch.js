@@ -7,11 +7,11 @@ const { MessageEmbed } = require("discord.js");
  */
 module.exports = function(message){
     if(message.mentions.users.size == 0){
-        message.channel.send('You need to mention someone to hug them!');
+        message.channel.send('You need to mention someone to punch them!');
     }else {
         var embed = new MessageEmbed()
-        .setDescription(`${message.author} hugs ${message.mentions.users.first()}`)
-        .setImage('https://c.tenor.com/6p_PsbiBLLoAAAAd/ffxiv-ffxivhug.gif')
+        .setDescription(`${message.author} punches ${message.mentions.users.first()}`)
+        .setImage('https://c.tenor.com/bVMMVnDpSzcAAAAd/zenos-ffxiv.gif')
         message.channel.send({embeds : [embed]});
     }
 }
