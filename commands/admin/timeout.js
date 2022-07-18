@@ -16,11 +16,11 @@ module.exports = function(message){
                 message.mentions.members.first().timeout(parseInt(args[3]*1000), `${message.author.tag} timed out for "${args[4]}"`);
                 message.channel.send('User timed out');
             }else {
-                message.mentions.members.first().timeout(parseInt(args[3]*1000), `You were timed out by ${message.author.tag} for being a bad bunny`)
+                message.mentions.members.first().timeout(parseInt(args[3])*1000, `You were timed out by ${message.author.tag} for being a bad bunny`)
                 message.channel.send('User timed out');
             }
         }catch(error){
-            console.log(`Error: ${error}`)
+            (`Error: ${error}`)
             throw error;
         }
     }

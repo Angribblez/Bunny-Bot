@@ -8,7 +8,7 @@ const client = new Client({
 const autoSave = require('./commands/economy/autoSave.js');
 //ready event
 client.on('ready', () => {
-    console.log(`${client.user.tag} is ready`);
+    (`${client.user.tag} is ready`);
     setInterval(autoSave, 60000);
 });
 //message event

@@ -14,7 +14,7 @@ module.exports = function(message){
         message.mentions.members.first().ban({reason: `Was banned by ${message.author.tag} for being a bad bunny`});
         message.channel.send(`${message.mentions.members.first().user.tag} was banned by ${message.author.tag}`);
         }catch(error){
-        console.log(`Error: ${error}`)
+        (`Error: ${error}`)
         throw error;
         }
     }

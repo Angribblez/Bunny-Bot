@@ -20,6 +20,8 @@ var grin = require('./commands/emote/grin');
 var balance = require('./commands/economy/balance');
 var roll = require('./commands/economy/roll');
 var zoo = require('./commands/battle/zoo');
+var rob = require('./commands/economy/rob');
+var work = require('./commands/economy/work');
 //parse commands
 var {prefix} = require('./json/config.json');
 /**
@@ -45,6 +47,9 @@ module.exports = function(message) {
     else if (message.content.startsWith(`${prefix} smile`)) smile(message)
     else if (message.content.startsWith(`${prefix} grin`)) grin(message)
     else if (message.content.startsWith(`${prefix} balance`)) balance(message)
+    else if (message.content.startsWith(`${prefix} bal`)) balance(message)
     else if (message.content.startsWith(`${prefix} roll`)) roll(message)
     else if (message.content.startsWith(`${prefix} zoo`)) zoo(message)
+    else if (message.content.startsWith(`${prefix} rob`)) rob(message)
+    else if (message.content.startsWith(`${prefix} work`)) work(message)
 }
