@@ -22,6 +22,7 @@ var roll = require('./commands/economy/roll');
 var zoo = require('./commands/battle/zoo');
 var rob = require('./commands/economy/rob');
 var work = require('./commands/economy/work');
+var purge = require('./commands/admin/purge');
 //parse commands
 var {prefix} = require('./json/config.json');
 /**
@@ -52,4 +53,5 @@ module.exports = function(message) {
     else if (message.content.startsWith(`${prefix} zoo`)) zoo(message)
     else if (message.content.startsWith(`${prefix} rob`)) rob(message)
     else if (message.content.startsWith(`${prefix} work`)) work(message)
+    else if (message.content.startsWith(`${prefix} purge`)) purge(message)
 }

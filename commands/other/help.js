@@ -13,6 +13,7 @@ module.exports = function(message){
     .addField('\:slight_smile:Emote', '`bun penguin` - sends a penguin\n`bun cry` - sends a crying gif\n`bun laugh` - sends a laughing gif\n`bun smile` - sends a smiling gif\n`bun grin` - sends a grinning gif')
     .addField('\:tools:Admin', '`bun ban` - bans the mentioned user\n`bun kick` - kicks the mentioned user\n`bun timeout` - times out the mentioned user')
     .addField('\:moneybag:Economy', '`bun balance` - shows your balance\n`bun roll` - rolls a dice for money\n`bun rob` - attempts to rob the mentioned user')
-    .addField('\:paperclip:Other', '`bun avatar` - views the mentioned users avatar\n`bun invite` - sends a invite for the bot\n`bun help` - displays this message');
+    .addField('\:paperclip:Other', '`bun avatar` - views the mentioned users avatar\n`bun invite` - sends a invite for the bot\n`bun help` - displays this message')
+    .addField('\:boom:Destruction', '`bun purge` - purges the server of those unworthy')
     message.channel.send({embeds: [messageContent]});
 }
